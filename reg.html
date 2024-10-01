@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>simple web</title>
+        <style>
+            a{
+                text-decoration:none;
+        }
+            .regi{
+                width:600px;
+                border:20px solid brown;
+                text-align:center;
+                margin-top:200px;
+                margin-left:450px;
+                color:black;
+                font-size:20px;
+                }
+            body{
+                background-image:url("top.webp");
+                background-repeat:no repeat;
+                background-size:cover;
+                }
+        .sa{
+            font-size:25px;
+            color:black;
+            float:right;
+            right:20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="regi">
+        <form action="module.php" method="post">
+            <h2>Student Registration Form</h2>
+            <br>
+            <label><b>Enter your Reg.No</b></label> 
+            <input type="text" name="regno">
+            <br>
+            <br>
+            <label><b>Enter your name</b></label> 
+            <input type="text" name="name">
+            <br>
+            
+            <br>
+            <label><b>Gender</b></label>
+            <input type="radio" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" value="Female">
+            <label for="Female">Female</label><br>
+            <br>
+            <br>
+            <label><b>Date of Birth</b></label>
+            <input type="date" name="dob">
+            <br>
+            <br>
+            <label for="course"><b>Choose a course:</b></label>
+            <select name="course" id="course">
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            </select>
+            </br>
+          <br>
+          <button type="submit">Submit</button>
+          <input type="button" value="Reset"/> 
+         </form>
+         </div>
+    </body>
+</html>

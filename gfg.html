@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    .geeks {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        color: #090;
+        padding-bottom: 5px;
+        font-family: Times New Roman;
+    }
+     
+    .geeks1 {
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        font-family: Times New Roman;
+    }
+     
+    h2 {
+        width: 350px;
+        animation-name: text;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        background-color: rgb(255, 210, 85);
+    }
+     
+    #one {
+        animation-timing-function: ease;
+    }
+     
+    #two {
+        animation-timing-function: linear;
+    }
+     
+    #three {
+        animation-timing-function: ease-in;
+    }
+     
+    #four {
+        animation-timing-function: ease-out;
+    }
+     
+    #five {
+        animation-timing-function: ease-in-out;
+    }
+     
+    @keyframes text {
+        from {
+            margin-left: 60%;
+        }
+        to {
+            margin-left: 0%;
+        }
+    }
+    </style>
+</head>
+ 
+<body>
+    <div class="geeks">GeeksforGeeks</div>
+    <div class="geeks1">A computer science portal for geeks</div>
+    <h2 id="one">This text is ease.</h2>
+    <h2 id="two">This text is linear.</h2>
+    <h2 id="three">This text is ease-in.</h2>
+    <h2 id="four">This text is ease-out.</h2>
+    <h2 id="five">This text is ease-in-out.</h2>
+</body>
+ 
+</html>
